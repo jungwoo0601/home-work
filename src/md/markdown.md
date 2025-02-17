@@ -353,5 +353,5 @@ _이탤릭체_
 
 <div style="border: 3px solid black; padding: 10px;">
 
-![설명](이미지링크)
-![example image](/src/assets/images/suhyeon.jpeg)
+
+(/src/assets/images/suhyeon.jpeg)
