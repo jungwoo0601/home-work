@@ -345,7 +345,6 @@ _이탤릭체_
 <div style="border: 3px solid black; padding: 10px;">
 
 ```markdown
-![설명](이미지링크)
 ![example image](https://images.unsplash.com/photo-1659340298031-f3e6824f6679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
 ```
 
@@ -353,5 +352,5 @@ _이탤릭체_
 
 <div style="border: 3px solid black; padding: 10px;">
 
-![설명](이미지링크)
-![example image](/src/assets/images/suhyeon.jpeg)
+
+![example](/src/assets/images/suhyeon.jpeg)
