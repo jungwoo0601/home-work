@@ -9,5 +9,5 @@
 
 ## 아바타
 
-- [아바타] (/src/avatars/avatars.html)
-- [아바타의회고] (/src/avatars/avatars.md)
+- [아바타](./src/avatars/avatars.html)
+- [아바타의회고](./src/avatars/avatars.md)
