@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.layout {
+  border : 1px solid black;
+}
+
+.avatar-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0px 20px;  /* layout창의 크기를 맞추기 위함!*/ 
+  padding: 20px; 
+  
+}
+
+
+.avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.status {
+  position: absolute;   
+  bottom: 0px;  
+  right: 0px;
+  width: 17.78px;
+  height: 17.78px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+.online {
+  background-color: #4cfe88;
+}
+
+.offline {
+  background-color: #dbdbdb;
+}
