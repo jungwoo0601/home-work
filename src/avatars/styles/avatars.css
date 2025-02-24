@@ -4,7 +4,10 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   align-items: center;
+=======
+>>>>>>> 9fafb4f9f36f96476226e52e499f9349726ac496
   overflow: hidden;
 }
 
@@ -21,12 +24,28 @@ body {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.layout {
+  border : 1px solid black;
+}
+
+>>>>>>> 9fafb4f9f36f96476226e52e499f9349726ac496
 .avatar-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+<<<<<<< HEAD
 }
 
+=======
+  margin: 0px 20px;  /* layout창의 크기를 맞추기 위함!*/ 
+  padding: 20px; 
+  
+}
+
+
+>>>>>>> 9fafb4f9f36f96476226e52e499f9349726ac496
 .avatar {
   position: relative;
   width: 64px;
@@ -40,11 +59,19 @@ body {
 }
 
 .status {
+<<<<<<< HEAD
   position: absolute;
   bottom: 5px;
   right: 5px;
   width: 12px;
   height: 12px;
+=======
+  position: absolute;   
+  bottom: 0px;  
+  right: 0px;
+  width: 17.78px;
+  height: 17.78px;
+>>>>>>> 9fafb4f9f36f96476226e52e499f9349726ac496
   border-radius: 50%;
   border: 1px solid #ffffff;
 }
