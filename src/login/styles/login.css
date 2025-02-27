@@ -118,16 +118,19 @@ a {
 }
 
 .stay-signed-in {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.875rem;
   margin-left: auto;
 }
 
-/* 마우스 가져다대면 스타일 */
 .stay-signed-in label {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   font-size: 0.875rem;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .stay-signed-in label::before {
@@ -144,11 +147,12 @@ a {
 }
 
 .stay-signed-in input:focus + label::before {
-  border: 2px solid var(--focus-color);
+  border: 1px solid var(--focus-color);
 }
 
 .ip-security-area {
-  display: none;
+  display: inline-block;
+  right: 0;
 }
 
 .ip-security-link {
@@ -159,6 +163,23 @@ a {
   color: var(--gray);
 }
 
+/* 반응형 (모바일) */
+@media (max-width: 768px) {
+  .login-options {
+    display: flex;
+    justify-content: flex-end; /* 모바일에서는 오른쪽 정렬 */
+    align-items: center;
+  }
+
+  .stay-signed-in {
+    margin-left: auto; /* 모바일에서는 오른쪽 끝으로 정렬 */
+  }
+
+  .ip-security-area {
+    display: none; /* 모바일에서는 IP 보안 숨기기 */
+  }
+}
+
 /* 반응형 (데스크탑) */
 @media (min-width: 768px) {
   .login-container {
@@ -167,11 +188,17 @@ a {
   }
 
   .ip-security-area {
-    display: block; /* 데스크탑에서는 표시 */
+    display: block;
+    margin-left: auto;
   }
 
-  .links {
-    font-size: 1rem;
-    gap: 1rem;
+  .login-options {
+    display: flex;
+    justify-content: flex-start; /* 데스크탑에서는 왼쪽 정렬 */
+    align-items: center;
+  }
+
+  .stay-signed-in {
+    margin-left: 0;
   }
 }
