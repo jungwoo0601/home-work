@@ -1,0 +1,155 @@
+@import "./card-component.css";
+
+/* 카드 레이아웃 */
+/* apple.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--size);
+  color: var(--white);
+  font-size: var(--base-text);
+  font-weight: bold;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column; /* content위치 이동을 위한 작업 */
+  justify-content: flex-start; /* content위치 이동을 위한 작업 */
+  padding-top: var(--large-spacing); /* content위치 이동을 위한 작업 */
+  margin-bottom: var(--base-spacing);
+  box-sizing: var(--size);
+}
+
+.grid-item:nth-child(even) h2,
+.grid-item:nth-child(even) h3 {
+  color: var(--white);
+}
+
+.grid-item:nth-child(odd) h2,
+.grid-item:nth-child(odd) h3 {
+  color: var(--black);
+}
+
+.grid-item h2 {
+  font-size: var(--large-text);
+  margin-bottom: var(--small-spacing);
+}
+
+.grid-item h3 {
+  font-size: var(--base-text);
+  margin-bottom: var(--x-small-spacing);
+  line-height: var(--line-normal);
+}
+
+.grid-item span {
+  font-size: var(--small-text);
+  color: var(--gray);
+}
+
+.btn {
+  display: flex;
+  gap: var(--small-spacing);
+  margin-top: var(--small-spacing);
+  justify-content: center;
+  align-items: center;
+
+  button {
+    padding: var(--x-small-spacing) var(--base-spacing);
+    font-size: var(--xx-small-text);
+    border-radius: 20px;
+    display: block;
+  }
+}
+
+.btn button:first-child {
+  background-color: var(--blue-300);
+  color: var(--white);
+  border: none;
+}
+
+.btn button:last-child {
+  background-color: transparent;
+  color: var(--blue-300);
+  border: 1px solid var(--blue-300);
+}
+
+.grid-item:nth-child(odd) .btn button:first-child {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.grid-item:nth-child(odd) .btn button:last-child {
+  color: black;
+  border: 1px solid black;
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--base-spacing);
+  }
+
+  .grid-item h2 {
+    font-size: var(--extra-large-text);
+  }
+
+  .grid-item h3 {
+    font-size: var(--medium-text);
+  }
+
+  .btn {
+    font-size: var(--x-small-text);
+  }
+}
+
+#ipad-pro {
+  background-image: url("../products/ipad_pro.jpeg");
+}
+#ipad-air {
+  background-image: url("../products/ipad_air.jpeg");
+}
+#iphone15-pro {
+  background-image: url("../products/iphone15_pro.jpeg");
+}
+#iphone15 {
+  background-image: url("../products/iphone15.jpeg");
+}
+#apple-watch {
+  background-image: url("../products/apple_watch.jpeg");
+}
+#macbook-air {
+  background-image: url("../products/macbook_air.jpeg");
+}
+#airpods-pro {
+  background-image: url("../products/airpods_pro.jpeg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #ipad-pro {
+    background-image: url("../products/ipad_pro_2x.jpeg");
+  }
+  #ipad-air {
+    background-image: url("../products/ipad_air_2x.jpeg");
+  }
+  #iphone15-pro {
+    background-image: url("../products/iphone15_pro_2x.jpeg");
+  }
+  #iphone15 {
+    background-image: url("../products/iphone15_2x.jpeg");
+  }
+  #apple-watch {
+    background-image: url("../products/apple_watch_2x.jpeg");
+  }
+  #macbook-air {
+    background-image: url("../products/macbook_air_2x.jpeg");
+  }
+  #airpods-pro {
+    background-image: url("../products/airpods_pro_2x.jpeg");
+  }
+}

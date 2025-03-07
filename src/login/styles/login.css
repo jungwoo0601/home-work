@@ -163,20 +163,33 @@ a {
   color: var(--gray);
 }
 
+/* 기본 상태는 OFF 텍스트 */
+#ipSecurity + label .status::before {
+  content: "OFF"; /* 기본값은 OFF */
+  color: var(--gray);
+  font-weight: bold;
+}
+
+/* 체크박스를 선택하면 ON 텍스트로 변경 */
+#ipSecurity:checked + label .status::before {
+  content: "ON"; /* ON 텍스트 */
+  color: var(--primary-color); /* ON 텍스트 색상 */
+}
+
 /* 반응형 (모바일) */
 @media (max-width: 768px) {
   .login-options {
     display: flex;
-    justify-content: flex-end; /* 모바일에서는 오른쪽 정렬 */
+    justify-content: flex-end;
     align-items: center;
   }
 
   .stay-signed-in {
-    margin-left: auto; /* 모바일에서는 오른쪽 끝으로 정렬 */
+    margin-left: auto;
   }
 
   .ip-security-area {
-    display: none; /* 모바일에서는 IP 보안 숨기기 */
+    display: none;
   }
 }
 
@@ -194,7 +207,7 @@ a {
 
   .login-options {
     display: flex;
-    justify-content: flex-start; /* 데스크탑에서는 왼쪽 정렬 */
+    justify-content: flex-start;
     align-items: center;
   }
 
